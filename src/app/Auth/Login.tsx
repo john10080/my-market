@@ -1,5 +1,5 @@
 'use client';
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 const Login = () => {
 
@@ -7,7 +7,7 @@ const Login = () => {
 
 
     // Login function
-    const handleLogin = (e) => {
+    const handleLogin = (e: { preventDefault: () => void; } ) => {
         e.preventDefault();
         alert("Login successful");
         router.push("/Landing");
