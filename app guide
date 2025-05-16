@@ -1,0 +1,27 @@
+Auth:
+login/page.tsx: User login page.
+register/page.tsx: User registration page.
+forgot-password/page.tsx: Page to handle password reset requests.
+user profile
+
+Pages
+- Home
+- Product Page : id
+
+Vendor
+- Add product
+- Edit product
+
+Features
+- Add to cart
+- shopping cart (displays list of items in cart)
+- favorites
+- search and filter
+- Product reviews and rating
+- Order tracking
+- notifications
+- checkout
+- payment gateways
+- discount and promotion
+- messaging
+
