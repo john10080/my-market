@@ -5,6 +5,7 @@ import $ from "jquery";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import "./style.css";
+import NavigationMenu from "../Navigation/navigationMenu";
 
 // Dynamically import OwlCarousel to avoid SSR issues
 const OwlCarousel = dynamic(() => import("react-owl-carousel"), { ssr: false });
@@ -35,6 +36,7 @@ const Banner = () => {
 
     return (
         <div className="banner-container">
+            <NavigationMenu />
             <OwlCarousel
                 className="owl-theme"
                 loop
