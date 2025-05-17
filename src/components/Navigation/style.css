@@ -13,13 +13,12 @@
 
 .search-wrapper{
     position: relative;
-    margin-left: 10px;
 }
 
 .search-wrapper input{
     outline: none;
     background: #ececec;
-    width: 100%;
+    width: calc(100% - 20px);
     border-radius: 5px;
     padding: 10px 10px;
     font-size: var(--ts-1);
@@ -28,8 +27,8 @@
 .search-wrapper img{
     position: absolute;
     max-width: 15px;
-    top: 7px;
-    right: 15px;
+    top: 12px;
+    right: 35px;
     cursor: pointer;
 }
 

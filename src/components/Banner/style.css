@@ -1,0 +1,30 @@
+.banner-item{
+    position: relative;
+}
+
+.banner-content{
+    position: absolute;
+    top: 25%;
+    margin-left: 50px;
+}
+
+.banner-container{
+    border-radius: 10px;
+    max-height: 530px;
+    overflow: hidden;
+}
+
+.banner-content h2{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.banner-content p{
+    color: #9f0606;
+    font-size: 40px;
+    max-width: 500px;
+    line-height: 45px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
