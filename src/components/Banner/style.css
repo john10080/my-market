@@ -28,3 +28,12 @@
     margin-bottom: 20px;
     font-weight: bolder;
 }
+
+.shop-now{
+    cursor: pointer;
+    background: #ab4e00;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: bold;
+}

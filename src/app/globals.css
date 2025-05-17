@@ -23,3 +23,7 @@ body {
   font-family: 'Nunito', sans-serif;
   letter-spacing: 0.1px;
 }
+
+a{
+  outline: none;
+}
