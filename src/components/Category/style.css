@@ -9,6 +9,15 @@
     padding: 10px 0px;
 }
 
+.cat-item:first-child{
+    padding-top: 0px;
+}
+
+.cat-item:last-child{
+    border-bottom: none;
+    padding-bottom: 0px;
+}
+
 .cat-title{
     display: flex;
     align-items: center;
