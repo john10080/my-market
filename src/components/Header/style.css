@@ -1,0 +1,19 @@
+.header-container{
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    font-size: var(--ts-1);
+}
+
+header a{
+    color: var(--gray);
+}
+
+header .links-left a{
+    margin-right: 10px;
+}

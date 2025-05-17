@@ -1,0 +1,30 @@
+.login-container{
+    max-width: 860px;
+    margin: 40px auto 0;
+    box-shadow: 0 0 20px #0000005e;
+}
+
+.login-container h1{
+    font-weight: bold;
+    color: var(--text);
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+}
+
+.login-container h1 img{
+    max-width: 25px;
+    color: transparent;
+    width: 100%;
+    height: auto;
+    margin-right: 10px;
+}
+
+.login-container button{
+    background-color: var(--green);
+}
+
+.login-container form{
+    padding: 50px;
+    padding-top: 50%;
+}   
