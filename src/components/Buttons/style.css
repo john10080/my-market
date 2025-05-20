@@ -15,5 +15,6 @@
 
 .btn-shop-now:hover{
     background: transparent;
-    border: 1px solid #000000;
+    border: 1px solid #ffffff;
+    color: #ffffff;
 }
