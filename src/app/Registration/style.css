@@ -16,16 +16,10 @@
     border: 1px solid var(--color-gray-300);
     display: block;
     width: 100%;
-    padding: 4px;
+    padding: 6px;
     border-radius: 6px;
 }
 
-.gender-option {
-    width: 45%;
-    display: flex;
-    justify-content: space-between;
-    
-}
 
 input[type='radio'] {
     accent-color: green;
@@ -35,16 +29,38 @@ input[type='radio'] {
 .gender-option label {
    padding-left: 4px;
 }
-
-.kost-button {
-    display: flex;
-    justify-content: space-between;
-    padding: 4px;
-    border: 1px solid var(--color-gray-300);
-    border-radius: 6px;
-}
-
 .down_arrow {
     margin-right: 8px;
 }
 
+.field-item input {
+    border: 1px solid var(--color-gray-300)
+}
+
+.submit_button {
+    background-color: var(--color-green-500);
+    color: white;
+    padding: 8px;
+    width: 100%;
+    border-radius: 6px;
+    font-weight: bold;
+
+}
+
+.submit_button:hover {
+    background-color: var(--color-green-700);
+    cursor: pointer;
+}
+
+.terms_condition input {
+    accent-color: green
+}
+
+.terms_condition input[type='checkbox'] {
+    cursor: pointer;
+}
+
+span.terms {
+    color: var(--color-green-500);
+    text-decoration: underline;
+}
