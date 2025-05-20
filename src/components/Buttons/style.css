@@ -1,0 +1,19 @@
+.btn-shop-now{
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #ffffff;
+    padding: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-shop-now svg{
+    margin-left: 10px;
+}
+
+.btn-shop-now:hover{
+    background: transparent;
+    border: 1px solid #000000;
+}

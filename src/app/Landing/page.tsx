@@ -2,6 +2,7 @@
 import Header from "@/components/Header/header";
 import Navigation from "@/components/Navigation/navigation";
 import BannerWithCategory from "@/components/Sections/bannerWithCategory";
+import Promo from "@/components/Sections/promo";
 
 
 export default function Landing() { 
@@ -10,7 +11,8 @@ export default function Landing() {
             <Header />
             <Navigation />
             <main className="container mx-auto">
-                <BannerWithCategory />  
+                <div className="section"><BannerWithCategory />  </div>
+                <div className="section"><Promo /></div>
             </main>
         </div>
     );

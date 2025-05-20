@@ -27,3 +27,7 @@ body {
 a{
   outline: none;
 }
+
+.section{
+  margin-bottom: 50px;
+}

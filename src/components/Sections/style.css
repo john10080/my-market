@@ -1,0 +1,34 @@
+.promo-item{
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.promo-item .promo-detail{
+    position: absolute;
+    top: 45px;
+    padding: 0px 30px;
+}
+
+.promo-item .promo-detail label{
+    font-size: var(--ts-2);
+    color: #900400;
+}
+
+.promo-item img{
+    height: 100%;
+}
+
+.promo-item .promo-detail h2{
+    font-size: 30px;
+    line-height: 39px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    font-weight: 800;
+}
+
+.promo-item .promo-detail p{
+    color: #606060;
+    font-size: var(--ts-3);
+    margin-bottom: 15px;
+}
