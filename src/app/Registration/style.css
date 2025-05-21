@@ -1,0 +1,50 @@
+.form-heading {
+    width: 70%;
+}
+
+.form-section button, .form-section input, .form-section label {
+    margin: 10px 0;
+}
+
+.form-section button {
+    border-color: var(--color-gray-300);
+    border-radius: 6px;
+    padding: 3px;
+}
+
+.form-section input[type=text] {
+    border: 1px solid var(--color-gray-300);
+    display: block;
+    width: 100%;
+    padding: 4px;
+    border-radius: 6px;
+}
+
+.gender-option {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+input[type='radio'] {
+    accent-color: green;
+    transform: scale(1);
+}
+
+.gender-option label {
+   padding-left: 4px;
+}
+
+.kost-button {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    border: 1px solid var(--color-gray-300);
+    border-radius: 6px;
+}
+
+.down_arrow {
+    margin-right: 8px;
+}
+
