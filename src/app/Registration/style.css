@@ -21,7 +21,7 @@
 }
 
 input[type='radio'] {
-    accent-color: green;
+    accent-color:   var(--red);
     transform: scale(1);
 }
 
@@ -37,7 +37,7 @@ input[type='radio'] {
 }
 
 .submit_button {
-    background-color: var(--color-green-500);
+    background-color: var(--red);
     color: white;
     padding: 8px;
     width: 100%;
@@ -48,12 +48,12 @@ input[type='radio'] {
 }
 
 .submit_button:hover {
-    background-color: var(--color-green-700);
+    background-color: #da0908;
     cursor: pointer;
 }
 
 .terms_condition input {
-    accent-color: green
+    accent-color: var(--red)
 }
 
 .terms_condition input[type='checkbox'] {
@@ -61,7 +61,7 @@ input[type='radio'] {
 }
 
 span.terms {
-    color: var(--color-green-500);
+    color: var(--red);
     text-decoration: underline;
 }
 
@@ -72,7 +72,7 @@ span.terms {
 .icon-image h1{
     display: flex;
     align-items: center;
-    color: var(--green);
+    color: var(--red);
 }
 
 .icon-image h1 img{
@@ -81,7 +81,7 @@ span.terms {
 }
 
 form input{
-    outline-color: #069f2d38;
+    outline: none;
 }
 
 .form-container{

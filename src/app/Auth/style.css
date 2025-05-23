@@ -6,7 +6,7 @@
 
 .login-container h1{
     font-weight: bold;
-    color: var(--green);
+    color: var(--red);
     display: flex;
     align-items: center;
 }
@@ -20,7 +20,7 @@
 }
 
 .login-container button {
-    background-color: var(--color-green-500);
+    background-color: var(--red);
     color: white;
     padding: 8px;
     width: 100%;
@@ -30,7 +30,7 @@
 }
 
 .login-container button:hover {
-    background-color: var(--color-green-700);
+    background-color: #da0908;
     cursor: pointer;
 }
 
@@ -45,5 +45,5 @@ input{
     width: 100%;
     padding: 6px;
     border-radius: 6px;
-    outline-color: #069f2d38;
+    outline: none;
 }
