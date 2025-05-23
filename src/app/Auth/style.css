@@ -6,8 +6,7 @@
 
 .login-container h1{
     font-weight: bold;
-    color: var(--text);
-    font-size: 28px;
+    color: var(--green);
     display: flex;
     align-items: center;
 }
@@ -20,11 +19,31 @@
     margin-right: 10px;
 }
 
-.login-container button{
-    background-color: var(--green);
+.login-container button {
+    background-color: var(--color-green-500);
+    color: white;
+    padding: 8px;
+    width: 100%;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.login-container button:hover {
+    background-color: var(--color-green-700);
+    cursor: pointer;
 }
 
 .login-container form{
     padding: 50px;
     padding-top: 50%;
 }   
+
+input{
+    border: 1px solid var(--color-gray-300);
+    display: block;
+    width: 100%;
+    padding: 6px;
+    border-radius: 6px;
+    outline-color: #069f2d38;
+}

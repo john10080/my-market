@@ -1,5 +1,5 @@
 .form-heading {
-    width: 70%;
+    max-width: 380px;
 }
 
 .form-section button, .form-section input, .form-section label {
@@ -44,6 +44,7 @@ input[type='radio'] {
     width: 100%;
     border-radius: 6px;
     font-weight: bold;
+    transition: all 0.5s ease;
 
 }
 
@@ -63,4 +64,37 @@ input[type='radio'] {
 span.terms {
     color: var(--color-green-500);
     text-decoration: underline;
+}
+
+.icon-image{
+    margin-bottom: 10px;
+}
+
+.icon-image h1{
+    display: flex;
+    align-items: center;
+    color: var(--green);
+}
+
+.icon-image h1 img{
+    max-width: 25px;
+    margin-right: 10px;
+}
+
+form input{
+    outline-color: #069f2d38;
+}
+
+.form-container{
+    max-width: 1060px;
+    margin: 40px auto 0;
+    box-shadow: 0 0 20px #00000036;
+}
+
+.form-wrapper{
+    padding: 35px 40px;
+}   
+
+.terms{
+    font-size: 13px;
 }

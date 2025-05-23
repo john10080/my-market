@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import "./style.css"; // Import your CSS file
 
-const Login = () => {
+const Auth = () => {
 
     const router = useRouter();
 
@@ -13,16 +13,19 @@ const Login = () => {
     const handleLogin = (e: { preventDefault: () => void; } ) => {
         e.preventDefault();
         alert("Login successful");
-        router.push("/Landing");
+        router.push("/");
     }
 
     return (
         <div className="grid grid-cols-2 login-container">
             <div className="image-wrapper">
-                <Image src="/assets/woman-sitting.jpg" layout="responsive" width={0} height={0} alt="Woman sitting" />
+                <Image src="/assets/login.jpg" layout="responsive" width={0} height={0} alt="Woman sitting" />
             </div>
             <form className="flex flex-col gap-4">
-                <h1><span><Image src="/assets/market.svg" layout="responsive" height={0} width={0} alt="market"/></span>Login to MyMarket</h1>
+                <h1 className="text-xl"><span><Image src="/assets/market.svg" layout="responsive" height={0} width={0} alt="market"/></span>Login to MyMarket</h1>
+                <p className="text-gray-400">
+                    Please enter your email and password to access your MyMarket account.
+                </p>
                 <input
                     type="email"
                     placeholder="Email"
@@ -35,7 +38,6 @@ const Login = () => {
                 />
                 <button
                     type="submit"
-                    className="bg-blue-500 text-white p-2 rounded hover:bg-blue-600 transition duration-200"
                     onClick={handleLogin}
                 >
                     Login
@@ -45,4 +47,4 @@ const Login = () => {
     );
 }
 
-export default Login;
+export default Auth;
