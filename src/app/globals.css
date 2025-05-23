@@ -31,3 +31,19 @@ a{
 .section{
   margin-bottom: 50px;
 }
+
+.section-header{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.section-header h1{
+  margin-right: 15px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.section-header p{
+  color: #6262629c;
+}

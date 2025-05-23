@@ -37,3 +37,8 @@
     color: #ffffff;
     font-weight: bold;
 }
+
+.keen-slider__slide {
+  min-width: 100% !important;
+  box-sizing: border-box;
+}

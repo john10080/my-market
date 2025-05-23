@@ -2,8 +2,8 @@
  * PANG NODE JS TO. CHANGE ALL PAG GAGAMITIN SA PHP
  */
 
-import { RegisterFormData } from "@/interface/formInput";
-import { GET_USER_COUNT, CREATE_USER } from "@/graphql/usersQuery";
+import { RegisterFormData } from "@/Interface/formInput";
+import { GET_USER_COUNT, CREATE_USER } from "@/Graphql/usersQuery";
 import client from "../../../apollo-client";
 
 export const Register = async (form: RegisterFormData) => {

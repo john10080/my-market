@@ -1,21 +1,9 @@
 'use client';
-
 import Image from "next/image";
-import dynamic from "next/dynamic";
-import $ from "jquery";
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
+import "keen-slider/keen-slider.min.css";
 import "./style.css";
 import NavigationMenu from "../Navigation/navigationMenu";
-
-// Make jQuery available globally before OwlCarousel loads
-if (typeof window !== "undefined") {
-  // @ts-ignore
-  window.$ = window.jQuery = $;
-}
-
-// Dynamically import OwlCarousel to avoid SSR issues
-const OwlCarousel = dynamic(() => import("react-owl-carousel"), { ssr: false });
+import { useKeenSlider } from "keen-slider/react";
 
 const slides = [
   {
@@ -31,22 +19,49 @@ const slides = [
 ];
 
 const Banner = () => {
+  const [sliderRef] = useKeenSlider<HTMLDivElement>({
+    loop: true,
+    slides: { perView: 1 },
+    mode: "snap",
+    renderMode: "performance",
+    drag: true,
+    created(s) {
+      // Optional: autoplay
+      let timeout: NodeJS.Timeout;
+      let mouseOver = false;
+      function clearNextTimeout() {
+        clearTimeout(timeout);
+      }
+      function nextTimeout() {
+        clearTimeout(timeout);
+        if (mouseOver) return;
+        timeout = setTimeout(() => {
+          s.next();
+        }, 4000);
+      }
+      s.on("created", () => {
+        s.container.addEventListener("mouseover", () => {
+          mouseOver = true;
+          clearNextTimeout();
+        });
+        s.container.addEventListener("mouseout", () => {
+          mouseOver = false;
+          nextTimeout();
+        });
+        nextTimeout();
+      });
+      s.on("dragStarted", clearNextTimeout);
+      s.on("animationEnded", nextTimeout);
+      s.on("updated", nextTimeout);
+    },
+  });
+
   return (
     <div className="banner-container">
       <NavigationMenu />
-      <OwlCarousel
-        className="owl-theme"
-        loop
-        margin={10}
-        nav
-        items={1}
-        dots
-        autoplay
-        smartSpeed={800}
-        autoplayTimeout={4000}
-      >
+      <div ref={sliderRef} className="keen-slider owl-theme">
         {slides.map((slide, idx) => (
-          <div className="banner-item" key={idx}>
+          <div className="keen-slider__slide banner-item" key={idx}>
             <div className="banner-image">
               <Image
                 src={slide.image}
@@ -63,7 +78,7 @@ const Banner = () => {
             </div>
           </div>
         ))}
-      </OwlCarousel>
+      </div>
     </div>
   );
 };
