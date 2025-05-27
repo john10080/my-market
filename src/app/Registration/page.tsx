@@ -22,8 +22,9 @@ export default function Registration() {
     }
     
     return (
-        
+
         <div className="grid grid-cols-2 form-container">
+            <h2>TEST LANG</h2>
             <div className="image-wrapper flex items-end bg-[url('/assets/reg-image.jpg')] bg-cover bg-center)">
             </div>
             <div className="form-wrapper">
