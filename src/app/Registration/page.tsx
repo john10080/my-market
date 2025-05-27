@@ -2,11 +2,12 @@
 import React, { useState } from 'react'
 import Image from 'next/image';
 import "./style.css";
-import { Register } from './register';
+// import { Register } from './register';
+import axios from "axios";
+
 export default function Registration() {
 
     const [user, setUser] = useState({
-        uid: "",
         email: "",
         password: "",
         first_name: "",
@@ -18,13 +19,20 @@ export default function Registration() {
     
     const handleSubmit = async (e: React.FormEvent) => {    
         e.preventDefault();
-        Register(user);
+        console.log(user);
+        try {
+            const response = await axios.post('http://localhost/my-market/api/register.php', user);
+            console.log(response);
+            alert("User data added successfully");
+        } catch (error) {
+            console.error('Registration failed:', error);
+        }
     }
     
     return (
         
         <div className="grid grid-cols-2 form-container">
-            <div className="image-wrapper flex items-end bg-[url('/assets/reg-image.jpg')] bg-cover bg-center)">
+            <div className="image-wrapper flex items-end bg-[url('/assets/reg-image.jpg')] bg-cover bg-center">
             </div>
             <div className="form-wrapper">
             <div className="icon-image">
@@ -95,19 +103,33 @@ export default function Registration() {
                         </span>
                     </div>
                     <div className="field-item mb-4">
-                        <label>Contact Number</label>
+                        <label>Password</label>
                         <span>
                             <input
-                                type="tel"
+                                type="password"
                                 className="w-full p-2 border rounded"
-                                name="contact_number"
-                                placeholder="Contact Number"
+                                name="password"
+                                placeholder="Password"
                                 required
-                                value={user.contact_number}
-                                onChange={e => setUser({ ...user, contact_number: e.target.value })}
+                                value={user.password}
+                                onChange={e => setUser({ ...user, password: e.target.value })}
                             />
                         </span>
                     </div>
+                </div>
+                <div className="field-item mb-4">
+                    <label>Contact Number</label>
+                    <span>
+                        <input
+                            type="tel"
+                            className="w-full p-2 border rounded"
+                            name="contact_number"
+                            placeholder="Contact Number"
+                            required
+                            value={user.contact_number}
+                            onChange={e => setUser({ ...user, contact_number: e.target.value })}
+                        />
+                    </span>
                 </div>
                 <div>
                 <label>Address</label>
