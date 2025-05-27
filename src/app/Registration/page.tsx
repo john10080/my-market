@@ -44,7 +44,7 @@ export default function Registration() {
             <form className="form-section" onSubmit={handleSubmit}>
                 <div className="grid grid-cols-2 gap-4">
                     <div className="field-item mb-4">
-                        <label>First Name</label>
+                        <label>First Name dasdsddas</label>
                         <span>
                             <input
                                 type="text"
