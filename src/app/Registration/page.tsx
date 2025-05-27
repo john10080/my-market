@@ -28,11 +28,13 @@ export default function Registration() {
             <div className="image-wrapper flex items-end bg-[url('/assets/reg-image.jpg')] bg-cover bg-center)">
             </div>
             <div className="form-wrapper">
+                TEST 3 lalalalala
             <div className="icon-image">
                 <h1 className="font-bold text-xl mb-4"> 
                     <Image src="/assets/market.svg" layout="responsive" width={0} height={0} alt='market-icon' /> 
                     Signup to My Market</h1>
             </div>
+            <h2>TEST ULET</h2>
             <div className="form-heading mb-4">
                 {/* <h1 className="text-lg font-bold">Signup Now</h1> */}
                 <p className="text-gray-400">
@@ -54,6 +56,7 @@ export default function Registration() {
                             />
                         </span>
                     </div>
+                    test 123 babush
                     <div className="field-item mb-4">
                         <label>Last Name</label>
                         <span>
