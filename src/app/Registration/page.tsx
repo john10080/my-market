@@ -24,17 +24,14 @@ export default function Registration() {
     return (
 
         <div className="grid grid-cols-2 form-container">
-            <h2>TEST LANG</h2>
             <div className="image-wrapper flex items-end bg-[url('/assets/reg-image.jpg')] bg-cover bg-center)">
             </div>
             <div className="form-wrapper">
-                TEST 3 lalalalala
             <div className="icon-image">
                 <h1 className="font-bold text-xl mb-4"> 
                     <Image src="/assets/market.svg" layout="responsive" width={0} height={0} alt='market-icon' /> 
                     Signup to My Market</h1>
             </div>
-            <h2>TEST ULET</h2>
             <div className="form-heading mb-4">
                 {/* <h1 className="text-lg font-bold">Signup Now</h1> */}
                 <p className="text-gray-400">
@@ -44,7 +41,7 @@ export default function Registration() {
             <form className="form-section" onSubmit={handleSubmit}>
                 <div className="grid grid-cols-2 gap-4">
                     <div className="field-item mb-4">
-                        <label>First Name dasdsddas</label>
+                        <label>First Name</label>
                         <span>
                             <input
                                 type="text"
@@ -56,7 +53,6 @@ export default function Registration() {
                             />
                         </span>
                     </div>
-                    test 123 babush
                     <div className="field-item mb-4">
                         <label>Last Name</label>
                         <span>
@@ -95,6 +91,20 @@ export default function Registration() {
                                 required
                                 value={user.email}
                                 onChange={e => setUser({ ...user, email: e.target.value })}
+                            />
+                        </span>
+                    </div>
+                    <div className="field-item mb-4">
+                        <label>Password</label>
+                        <span>
+                            <input
+                                type="password"
+                                className="w-full p-2 border rounded"
+                                name="password"
+                                placeholder="Password"
+                                required
+                                value={user.password}
+                                onChange={e => setUser({ ...user, password: e.target.value })}
                             />
                         </span>
                     </div>

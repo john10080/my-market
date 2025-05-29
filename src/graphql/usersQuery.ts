@@ -9,6 +9,24 @@ export const GET_USER_COUNT = gql`
     }
 `
 
+export const LOGIN_USER = gql`
+    mutation Auth($email: String!, $password: String!) {
+        loginUser(
+            email: $email,
+            password: $password
+        ){
+            isAuthenticated
+            user {
+                uid
+                email
+                first_name
+                last_name
+            }
+            accessToken
+        }
+    }
+`
+
 /**
  * Mutations
  */
