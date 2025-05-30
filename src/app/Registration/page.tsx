@@ -3,6 +3,9 @@ import React, { useState } from 'react'
 import Image from 'next/image';
 import "./style.css";
 import { Register } from './register';
+import { Toaster } from 'react-hot-toast';
+import { ErrorToast, SuccessToast } from "@/components/Toast/basicToast";
+
 export default function Registration() {
 
     const [user, setUser] = useState({
@@ -18,12 +21,21 @@ export default function Registration() {
     
     const handleSubmit = async (e: React.FormEvent) => {    
         e.preventDefault();
-        Register(user);
+        const register = await Register(user);
+
+        console.log(register)
+        if(!register) {
+            ErrorToast("Registration Failed")
+        } else {
+            SuccessToast("Registration Success")
+        }
+        
     }
     
     return (
 
         <div className="grid grid-cols-2 form-container">
+            <Toaster/>
             <div className="image-wrapper flex items-end bg-[url('/assets/reg-image.jpg')] bg-cover bg-center)">
             </div>
             <div className="form-wrapper">
