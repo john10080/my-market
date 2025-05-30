@@ -23,6 +23,7 @@ export const LOGIN_USER = gql`
                 last_name
             }
             accessToken
+            code
         }
     }
 `
