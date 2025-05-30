@@ -25,7 +25,7 @@ export default function Registration() {
 
         console.log(register)
         if(!register) {
-            ErrorToast("Registration Failed")
+            ErrorToast(register)
         } else {
             SuccessToast("Registration Success")
         }

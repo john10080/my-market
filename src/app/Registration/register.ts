@@ -21,7 +21,6 @@ export const Register = async (form: RegisterFormData) => {
         console.log("User created successfully:", data.createUser);
         return data 
     }catch (error) {
-        console.error("Error creating user:", error);
-        return 0
+        return error
     }
 };
