@@ -52,7 +52,7 @@ h4 , .items-container .detail {
 
 .grid-section div h4 {
     font-weight: bold;
-    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 
@@ -69,11 +69,16 @@ h4 , .items-container .detail {
 
 .grid-div p {
     font-size: 0.65rem;
-    margin-block: 3px;
+    /* margin-block: 3px; */
 }
 
 p.item-detail {
     font-size: 0.65rem;
+}
+
+p.contact-detail {
+    font-size: 1.125rem;
+    color: black;
 }
 
 
@@ -84,8 +89,8 @@ p.item-detail {
 
 p.app-discount {
     font-size: 0.5rem;
-    padding-left: 8px;
-    padding-top: 5px;
+    max-width: 60px;
+    margin-left: 10px;
 }
 
 .download-app span img {

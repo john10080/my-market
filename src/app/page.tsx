@@ -9,7 +9,7 @@ import Footer from "@/components/Footer/footer";
 
 export default function Landing() { 
     return (
-        <div className="flex flex-col min-h-screen bg-gray-100">
+        <div className="flex flex-col min-h-screen">
             <Header />
             <Navigation />
             <main className="container mx-auto">
