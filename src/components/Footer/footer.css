@@ -1,0 +1,131 @@
+.footer-section p {
+    color: #5b5f68;
+}
+
+h4 , .items-container .detail {
+    color: black;
+}
+
+.newsletter-input-container {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+.newsletter-input-container input[type="email"] {
+    width: 100%;
+    padding: 4px;
+}
+
+.newsletter-input-container button {
+    color: white;
+    background-color: #5c3d9c;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.newsletter-input-container button:hover {
+    background-color: #4e2f8d;
+}
+
+.newsletter-form p a {
+    color: #5c3d9c;
+}
+
+.newsletter-input-container {
+    background-color: white;
+}
+
+.grid-div > h4 {
+    font-size: 0.8em;
+}
+
+/* Second Row Section */
+.grid-section {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding-top: 12px;
+    padding-bottom: 20px;
+}
+
+.grid-section div h4 {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+
+
+.items-container span {
+    margin-top: 5px;
+}
+
+
+.newsletter-form p {
+    font-size: 0.6em;
+} 
+
+
+.grid-div p {
+    font-size: 0.65rem;
+    margin-block: 3px;
+}
+
+p.item-detail {
+    font-size: 0.65rem;
+}
+
+
+.social-media-icons span img {
+    padding: 4px;
+    background-color: white;
+}
+
+p.app-discount {
+    font-size: 0.5rem;
+    padding-left: 8px;
+    padding-top: 5px;
+}
+
+.download-app span img {
+    margin-block: 5px;
+    cursor: pointer;
+}
+
+.social-media-icons span img {
+    margin: 0 3px;
+}
+
+.grid-section > div {
+    margin-block: 15px;
+}
+
+/* Copyright section */
+.copyright-section {
+    margin-block: 20px;
+}
+
+.copyright-links a {
+    margin: 0 3px;
+    text-decoration: underline;
+    font-size: 0.85em;
+}
+
+.copyright-section span {
+    color: #5c3d9c;
+}
+
+
+.copyright-section p {
+    font-size: 0.85em;
+}
+
+/* Payment section */
+.payment-section img {
+    margin: 0px 5px;
+}
+
+.payment-section {
+    margin-block: 15px;
+}
